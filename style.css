@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #181818;
+}
+header{
+    width: 100%;
+    z-index: 100;
+}
+.slide {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80vh;
+    background-color: black;
+    overflow: hidden;
+}
+.carousel-item img{
+    margin: auto;
+}
+.baslık {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+.baslık h1 {
+    font-weight: 400;
+    font-size: 32px;
+    border-bottom: 1px solid #fff;
+}
+.card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.card-all {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    border-radius: 10px;
+}
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.card {
+    width: 398px;
+    border: 0;
+}
+.cardlar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .image {
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card-body p {
+    color: #fff;
+}
+@media screen and (max-width: 1400px) {
+    .card {
+        width: 320px;
+    }
+    .card .image {
+        height: 180px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .card {
+        width: 274px;
+    }
+    .card .image {
+        height: 154px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .girisYap {
+        display: none;
+    }
+    .slide {
+        height: auto;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 971px) {
+    .card {
+        width: 398px;
+    }
+    .card .image {
+        height: 224px;
+    }
+    .cardlar {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 500px) {
+    .card {
+        width: 274px;
+    }
+    .card .image {
+        height: 154px;
+    }
+}
