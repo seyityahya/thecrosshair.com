@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.proje</title>
+    <link rel="stylesheet" href="giris.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <div class="giriş-kayıt-sorusu">
+                <a href="#" id="giris-yap">Giriş Yap</a>
+                <a href="#" id="kayıt-ol">Kayıt Ol</a>
+            </div>
+            <input type="email" id="email" placeholder="E-mail">
+            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password-tekrar" placeholder="Password">
+            <div id="button-ekleme">
+                <p id="message">Şifre <span id="strenght"></span></p>
+                <p id="message2">Şifre <span id="sifre-denkleme"></span></p>
+                <button id="giriş-butonu">Giriş Yap</button>
+                <button id="kayıt-butonu">Kayıt Ol</button>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark" onclick="history.go(-1)" id="geri-tusu"></i>
+        <i class="fa-solid fa-xmark" onclick="history.go(-2)" id="geri-tusu2"></i>
+    </div>
+    <script src="giris.js"></script>
+    <script src="https://kit.fontawesome.com/46def1b94a.js" crossorigin="anonymous"></script>
+</body>
+</html>

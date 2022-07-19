@@ -20,7 +20,7 @@ header{
 .carousel-item img{
     margin: auto;
 }
-.baslık {
+.baslik {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ header{
     margin-bottom: 30px;
     color: aliceblue;
 }
-.baslık h1 {
+.baslik h1 {
     font-weight: 400;
     font-size: 32px;
     border-bottom: 1px solid #fff;
@@ -46,18 +46,29 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #212529;
-    border-radius: 10px;
+}
+.crosshair-cardlar {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 .card {
     width: 398px;
     border: 0;
+    transition: 500ms;
+    border: 1px solid #212529;
+}
+.card:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 .cardlar {
     margin-top: 20px;
@@ -65,6 +76,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.crosshair-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .card .image {
     height: 224px;
@@ -77,6 +94,113 @@ header{
 .card-body p {
     color: #fff;
 }
+.sensivity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sensivity-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.oyun-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#input-kismi{
+    margin: 0 20px;
+}
+.sensivity-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.oyun-bilgi {
+    width: 50%;
+    margin-top: 30px;
+    color: #fff;
+    padding: 20px;
+    background-color: #212529;
+    border-radius: 10px;
+}
+.hassasiyet-oyunları {
+    width: 50%;
+    margin-top: 30px;
+    background-color: #212529;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 10px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.oyunlar-sens {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.oyunlar-sens a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.hassasiyet-oyunları h4 {
+    color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #888;
+}
+.populer-player {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.populer-player div {
+    color: #fff;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cizgi {
+    width: 1px;
+    height: 400px;
+    background-color: #fff;
+}
+.populer-player div ul li {
+    border-bottom: 1px solid #fff;
+}
+.populer-player div h4 {
+    color: #0d6efd;
+}
+.populer-player-baslık {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.populer-player-baslık h2 {
+    border-bottom: 1px solid #fff;
+}
+
+
+
 @media screen and (max-width: 1400px) {
     .card {
         width: 320px;
@@ -101,6 +225,18 @@ header{
         height: auto;
         overflow: auto;
     }
+    .oyun-sec {
+        width: 70%;
+    }
+    .sensivity-sec {
+        width: 70%;
+    }
+    .oyun-bilgi {
+        width: 70%;
+    }
+    .hassasiyet-oyunları {
+        width: 70%;
+    }
 }
 @media screen and (max-width: 971px) {
     .card {
@@ -113,6 +249,11 @@ header{
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 650px) {
+    .hassasiyet-oyunları {
+        height: 650px;
+    }
+}
 @media screen and (max-width: 500px) {
     .card {
         width: 274px;
@@ -120,4 +261,31 @@ header{
     .card .image {
         height: 154px;
     }
+    .oyun-sec {
+        width: 90%;
+    }
+    .sensivity-sec {
+        width: 90%;
+    }
+    .oyun-bilgi {
+        width: 90%;
+    }
+    .hassasiyet-oyunları {
+        width: 90%;
+    }
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  } 
+
